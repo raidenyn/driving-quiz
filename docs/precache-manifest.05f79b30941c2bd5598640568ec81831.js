@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cdc8222c7267198077e0cffa87738014",
+    "revision": "28be33717e03b5cede8bcab7470087ed",
     "url": "https://raidenyn.github.io/driving-quiz/index.html"
   },
   {
-    "revision": "ea0761695f778d4b4c36",
+    "revision": "f4cc0bc37823dc452a3e",
     "url": "https://raidenyn.github.io/driving-quiz/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://raidenyn.github.io/driving-quiz/static/js/3.69643fed.chunk.js"
   },
   {
-    "revision": "ea0761695f778d4b4c36",
-    "url": "https://raidenyn.github.io/driving-quiz/static/js/main.3ea6340a.chunk.js"
+    "revision": "f4cc0bc37823dc452a3e",
+    "url": "https://raidenyn.github.io/driving-quiz/static/js/main.5cd3da5a.chunk.js"
   },
   {
     "revision": "efb1ee2ddc56086be94a",
