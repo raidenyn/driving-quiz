@@ -31,7 +31,7 @@ export const CurrentQuestion: React.FunctionComponent<Props> = ({ question, gott
             {
                 question.picture &&
                 <Grid item xs={12}>
-                    <img src={`/images/${question.picture}`} alt="question"/>
+                    <img src={`images/${question.picture}`} alt="question"/>
                 </Grid>
             }
             {
