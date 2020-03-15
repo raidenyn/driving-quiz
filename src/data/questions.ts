@@ -1862,7 +1862,7 @@ const questions: Question[] = [
                 "text": "Fill over the line on the engine gauge"
             },
             "B": {
-                "text": "Fill equal to the upper line ofthe engine gauge"
+                "text": "Fill equal to the upper line of the engine gauge"
             },
             "C": {
                 "text": "Fill lower than the line on the engine gauge"
@@ -2103,7 +2103,7 @@ const questions: Question[] = [
     },
     {
         "id": 109,
-        "text": "When the police stretch the left arm shoulder, driver who drive from which side or the police must",
+        "text": "When the police stretch the left arm shoulder, driver who drive from which side or the police must stop?",
         "answers": {
             "A": {
                 "text": "Side"
@@ -2304,7 +2304,7 @@ const questions: Question[] = [
                 "text": "Check by eyes"
             },
             "C": {
-                "text": "Hand press on the center of the"
+                "text": "Hand press on the center of the belt"
             },
             "D": {
                 "text": "Take out the belt to measure"
@@ -3383,16 +3383,16 @@ const questions: Question[] = [
         "text": "Which is the function of engine oil?",
         "answers": {
             "A": {
-                "text": "ADo nrrtt ^hat 'S ^*S S'gn mean? ©Do not turn left or U-turn"
+                "text": "Cooling the heat from the radiator"
             },
             "B": {
-                "text": "Turn left or U-turn"
+                "text": "Exhaust heat from the engine"
             },
             "C": {
-                "text": "Turn left or turn right"
+                "text": "Cooling the brake pads"
             },
             "D": {
-                "text": "Do not turn left or turn right"
+                "text": "Clean the radiator"
             }
         },
         "correctAnswerId": "B"
@@ -3658,7 +3658,7 @@ const questions: Question[] = [
     },
     {
         "id": 190,
-        "text": "What is this S‘en mean?",
+        "text": "What is this Sign mean?",
         "answers": {
             "A": {
                 "text": "subsidiary road merged main road from right"
