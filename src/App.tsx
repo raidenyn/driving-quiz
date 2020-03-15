@@ -1,11 +1,9 @@
 import React from 'react';
-import SessionQuestionContainer from "./containers/SessionQuestionContainer";
+import {Router} from "./router";
 
 function App() {
   return (
-    <>
-      <SessionQuestionContainer/>
-    </>
+    <Router />
   );
 }
 
