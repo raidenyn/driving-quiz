@@ -9,7 +9,7 @@ interface AnswerProps {
 }
 
 export const Answer = styled(
-    ({isCorrect, isGotten, ...props}) => <Button {...props} variant="contained"/>
+    ({isCorrect, isGotten, ...props}: AnswerProps) => <Button {...props} variant="contained"/>
 )<AnswerProps>`
   &, &:hover {
     background-color ${({isCorrect, isGotten}) => isCorrect ? "green" : (isGotten ? "yellow" : undefined)};
