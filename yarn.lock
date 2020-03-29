@@ -1324,6 +1324,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/hash@npm:^0.8.0":
+  version: 0.8.0
+  resolution: "@emotion/hash@npm:0.8.0"
+  checksum: 2/8fd781e18428745d6c7121bebf3965cad12c61f3bd5fb773e46f16f1d7b7ae1346770df438fcfe8bc73ecf6762a54baef7cf259a694575d4f06cabb79ebcf7c0
+  languageName: node
+  linkType: hard
+
 "@emotion/is-prop-valid@npm:^0.8.3":
   version: 0.8.7
   resolution: "@emotion/is-prop-valid@npm:0.8.7"
@@ -1651,6 +1658,37 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@material-ui/styles@npm:^4.9.6":
+  version: 4.9.6
+  resolution: "@material-ui/styles@npm:4.9.6"
+  dependencies:
+    "@babel/runtime": ^7.4.4
+    "@emotion/hash": ^0.8.0
+    "@material-ui/types": ^5.0.0
+    "@material-ui/utils": ^4.9.6
+    clsx: ^1.0.2
+    csstype: ^2.5.2
+    hoist-non-react-statics: ^3.3.2
+    jss: ^10.0.3
+    jss-plugin-camel-case: ^10.0.3
+    jss-plugin-default-unit: ^10.0.3
+    jss-plugin-global: ^10.0.3
+    jss-plugin-nested: ^10.0.3
+    jss-plugin-props-sort: ^10.0.3
+    jss-plugin-rule-value-function: ^10.0.3
+    jss-plugin-vendor-prefixer: ^10.0.3
+    prop-types: ^15.7.2
+  peerDependencies:
+    "@types/react": ^16.8.6
+    react: ^16.8.0
+    react-dom: ^16.8.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 2/e024e8450c584427c327fc03b63db0265ea1e3b75d0581a32cbe6f405a620f21a6db02873556df35b720004ca8d919ae10b26951f85a06846976162edeb8e488
+  languageName: node
+  linkType: hard
+
 "@material-ui/system@npm:^4.9.3":
   version: 4.9.3
   resolution: "@material-ui/system@npm:4.9.3"
@@ -1692,6 +1730,20 @@ __metadata:
     react: ^16.8.0
     react-dom: ^16.8.0
   checksum: 2/bf156f4bd44b60b8d11c032022c816544bbdf1bf2eda344cfdffd6dd7b1ed93ab9edc08eb0f2c313f0a386801d64db9cce63843030b94f0a35322a84f51a623c
+  languageName: node
+  linkType: hard
+
+"@material-ui/utils@npm:^4.9.6":
+  version: 4.9.6
+  resolution: "@material-ui/utils@npm:4.9.6"
+  dependencies:
+    "@babel/runtime": ^7.4.4
+    prop-types: ^15.7.2
+    react-is: ^16.8.0
+  peerDependencies:
+    react: ^16.8.0
+    react-dom: ^16.8.0
+  checksum: 2/638c97cd1c6eeb3a3386daef171222ce49fecf7e9be0207f3be0e45d41db1848c482069ad44119399b9a67904a9e6da41da488b9016f8958c503f3ce1b5f3b09
   languageName: node
   linkType: hard
 
@@ -5207,6 +5259,7 @@ __metadata:
   dependencies:
     "@material-ui/core": ^4.9.5
     "@material-ui/icons": ^4.9.1
+    "@material-ui/styles": ^4.9.6
     "@testing-library/jest-dom": ^5.1.1
     "@testing-library/react": ^10.0.1
     "@testing-library/user-event": ^10.0.0

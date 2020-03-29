@@ -1171,7 +1171,7 @@ const questions: Question[] = [
     },
     {
         "id": 61,
-        "text": "Which of the pictures below illustrates „",
+        "text": "Which of the pictures below illustrates proper parking",
         "answers": {
             "A": {
                 "text": "See the picture on the right hand"

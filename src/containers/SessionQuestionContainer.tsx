@@ -12,7 +12,7 @@ import {CurrentQuestion} from "../components/CurrentQuestion";
 import {NewSessionButton} from "../components/NewSessionButton";
 import {NextQuestionButton} from "../components/NextQuestionButton";
 import {Container} from "@material-ui/core";
-import {SessionAnswersCounter} from "../components/SessionAnswersCounter";
+import {SessionProgressBar} from "../components/SessionProgressBar";
 import {SessionResult} from "../components/SessionResult";
 
 const connector = connect(
@@ -49,25 +49,27 @@ const Question: React.FunctionComponent<Props> = (props) => {
         )
     }
 
-    return (<Container>
-        <SessionAnswersCounter
-            total={props.totalQuestions}
-            current={props.currentQuestion}
-            correct={props.correctAnswers}
-        />
-        <CurrentQuestion
-            key="question"
-            question={props.question}
-            gottenAnswerId={props.gottenAnswerId}
-            onAnswer={props.answer}
-        />
-        {
-            props.gottenAnswerId != null &&
-            (
-                <NextQuestionButton key="next" onNextQuestion={props.nextQuestion}/>
-            )
-        }
-    </Container>)
+    return (
+        <Container>
+            <SessionProgressBar
+                total={props.totalQuestions!}
+                current={props.currentQuestion!}
+                correct={props.correctAnswers!}
+            />
+            <CurrentQuestion
+                key="question"
+                question={props.question}
+                gottenAnswerId={props.gottenAnswerId}
+                onAnswer={props.answer}
+            />
+            {
+                props.gottenAnswerId != null &&
+                (
+                    <NextQuestionButton key="next" onNextQuestion={props.nextQuestion}/>
+                )
+            }
+        </Container>
+    )
 }
 
 export default connector(Question)
