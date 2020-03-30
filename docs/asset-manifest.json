@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/static/js/main.d059396c.chunk.js",
-    "main.js.map": "/static/js/main.d059396c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e050df51.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e050df51.js.map",
-    "static/js/2.05819226.chunk.js": "/static/js/2.05819226.chunk.js",
-    "static/js/2.05819226.chunk.js.map": "/static/js/2.05819226.chunk.js.map",
-    "static/js/3.2a91a1fc.chunk.js": "/static/js/3.2a91a1fc.chunk.js",
-    "static/js/3.2a91a1fc.chunk.js.map": "/static/js/3.2a91a1fc.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.799a6f58de6f51bac0c43b3ecda2b45b.js": "/precache-manifest.799a6f58de6f51bac0c43b3ecda2b45b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.05819226.chunk.js.LICENSE.txt": "/static/js/2.05819226.chunk.js.LICENSE.txt"
+    "main.css": "https://raidenyn.github.io/driving-quiz/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "https://raidenyn.github.io/driving-quiz/static/js/main.13434731.chunk.js",
+    "main.js.map": "https://raidenyn.github.io/driving-quiz/static/js/main.13434731.chunk.js.map",
+    "runtime-main.js": "https://raidenyn.github.io/driving-quiz/static/js/runtime-main.b652d5f1.js",
+    "runtime-main.js.map": "https://raidenyn.github.io/driving-quiz/static/js/runtime-main.b652d5f1.js.map",
+    "static/js/2.6855bb75.chunk.js": "https://raidenyn.github.io/driving-quiz/static/js/2.6855bb75.chunk.js",
+    "static/js/2.6855bb75.chunk.js.map": "https://raidenyn.github.io/driving-quiz/static/js/2.6855bb75.chunk.js.map",
+    "static/js/3.2a91a1fc.chunk.js": "https://raidenyn.github.io/driving-quiz/static/js/3.2a91a1fc.chunk.js",
+    "static/js/3.2a91a1fc.chunk.js.map": "https://raidenyn.github.io/driving-quiz/static/js/3.2a91a1fc.chunk.js.map",
+    "index.html": "https://raidenyn.github.io/driving-quiz/index.html",
+    "precache-manifest.54158b2a36a101675e0351b1b26084de.js": "https://raidenyn.github.io/driving-quiz/precache-manifest.54158b2a36a101675e0351b1b26084de.js",
+    "service-worker.js": "https://raidenyn.github.io/driving-quiz/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "https://raidenyn.github.io/driving-quiz/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.6855bb75.chunk.js.LICENSE.txt": "https://raidenyn.github.io/driving-quiz/static/js/2.6855bb75.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e050df51.js",
-    "static/js/2.05819226.chunk.js",
+    "static/js/runtime-main.b652d5f1.js",
+    "static/js/2.6855bb75.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.d059396c.chunk.js"
+    "static/js/main.13434731.chunk.js"
   ]
 }
