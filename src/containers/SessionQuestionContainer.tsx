@@ -14,6 +14,7 @@ import {NextQuestionButton} from "../components/NextQuestionButton";
 import {Container} from "@material-ui/core";
 import {SessionProgressBar} from "../components/SessionProgressBar";
 import {SessionResult} from "../components/SessionResult";
+import {LandingPage} from "../components/LandingPage";
 
 const connector = connect(
     (state: RootState)=> {
@@ -34,7 +35,7 @@ type Props = ConnectedProps<typeof connector>
 
 const Question: React.FunctionComponent<Props> = (props) => {
     if (!props.session) {
-        return <NewSessionButton onNewSession={props.createNew} />
+        return <LandingPage onCreateNewSession={props.createNew} />
     }
 
     if (!props.question) {
