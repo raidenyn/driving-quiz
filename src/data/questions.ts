@@ -753,7 +753,7 @@ const questions: Question[] = [
                 "text": "After taking medicine for diarrhea"
             },
             "B": {
-                "text": "mmediately after consuming alcohol or any other intoxicant"
+                "text": "Immediately after consuming alcohol or any other intoxicant"
             },
             "C": {
                 "text": "When he/she has a cold or flu"

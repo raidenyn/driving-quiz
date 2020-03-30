@@ -5,7 +5,7 @@ export interface Props {
     src: string | undefined
 }
 
-export const Picture: React.FunctionComponent<Props> = (props) => {
+export const QuestionPicture: React.FunctionComponent<Props> = (props) => {
     if (props.src == null) {
         return <></>
     }

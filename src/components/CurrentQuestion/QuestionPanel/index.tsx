@@ -1,6 +1,6 @@
 import React from "react"
 import {Box} from "@material-ui/core";
-import { Picture } from "./Picture";
+import { QuestionPicture } from "../../QuestionPicture";
 
 export interface Props {
     questionId: number
@@ -14,7 +14,7 @@ export const QuestionPanel: React.FunctionComponent<Props> = (props) => {
     return (
         <Box maxWidth="sm">
            {props.questionId}. {props.text}
-           <Picture src={props.picture} />
+           <QuestionPicture src={props.picture} />
         </Box>
     )
 }
