@@ -5,7 +5,7 @@ import SearchQuestionContainer from "./containers/SearchResultContainer";
 import MainLayoutContainer from "./containers/MainLayoutContainer";
 
 export const Router: React.FunctionComponent = () => (
-    <BrowserRouter >
+    <BrowserRouter basename="/driving-quiz" >
         <LayoutRouter path="/search" component={SearchQuestionContainer} layout={MainLayoutContainer} exact />
         <LayoutRouter path="/" component={SessionQuestionContainer} layout={MainLayoutContainer}  exact />
     </BrowserRouter>
