@@ -4,6 +4,7 @@ import {isActionOf} from "typesafe-actions";
 import {filter, map, mergeMap} from "rxjs/operators";
 import {RootState} from "../state";
 import {of} from "rxjs";
+import {Question} from "./state";
 
 const epics : { [name: string] : Epic<QuestionsActions, QuestionsActions, RootState> } = {
     retrieveQuestions: action$ =>
@@ -14,6 +15,22 @@ const epics : { [name: string] : Epic<QuestionsActions, QuestionsActions, RootSt
                 return getter
             }),
             mergeMap( getter => getter()),
+            map((questions: Question[]) => {
+                // shuffle answers
+                for (const question of questions) {
+                    const versions = Object.keys(question.answers)
+                    const newAnswers: typeof question.answers = { }
+                    for (const [version, answer] of Object.entries(question.answers)) {
+                        const newVersion = versions.splice(Math.floor(Math.random() * versions.length), 1)[0]
+                        if (question.correctAnswerId === version) {
+                            question.correctAnswerId = newVersion
+                        }
+                        newAnswers[newVersion] = answer
+                    }
+                    question.answers = newAnswers
+                }
+                return questions
+            }),
             map(questions => questionsActions.append({
                 questions
             }))
