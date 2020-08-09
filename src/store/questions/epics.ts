@@ -20,14 +20,16 @@ const epics : { [name: string] : Epic<QuestionsActions, QuestionsActions, RootSt
                 for (const question of questions) {
                     const versions = Object.keys(question.answers)
                     const newAnswers: typeof question.answers = { }
+                    let newCorrectAnswer = ""
                     for (const [version, answer] of Object.entries(question.answers)) {
                         const newVersion = versions.splice(Math.floor(Math.random() * versions.length), 1)[0]
                         if (question.correctAnswerId === version) {
-                            question.correctAnswerId = newVersion
+                            newCorrectAnswer = newVersion
                         }
                         newAnswers[newVersion] = answer
                     }
                     question.answers = newAnswers
+                    question.correctAnswerId = newCorrectAnswer
                 }
                 return questions
             }),
