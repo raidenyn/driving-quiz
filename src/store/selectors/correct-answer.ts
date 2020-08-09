@@ -29,18 +29,18 @@ export const currentQuestion = createSelector(
     }
 )
 
-const isCorrectAnswer = (qestion: Question, sessionQuestion: SessionQuestion) => {
-    return qestion.correctAnswerId === sessionQuestion.gottenAnswerId
+const isCorrectAnswer = (question: Question, sessionQuestion: SessionQuestion) => {
+    return question.correctAnswerId === sessionQuestion.gottenAnswerId
 }
 
 export const currentAnswerIsCorrect = createSelector(
     currentQuestion,
     currentSessionQuestion,
-    (qestion, sessionQuestion) => {
-        if (!qestion || !sessionQuestion) {
+    (question, sessionQuestion) => {
+        if (!question || !sessionQuestion) {
             return null
         }
-        return isCorrectAnswer(qestion, sessionQuestion)
+        return isCorrectAnswer(question, sessionQuestion)
     }
 )
 
