@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://raidenyn.github.io/driving-quiz/precache-manifest.eff917a79861828e93f0080424d2c5b0.js"
+  "https://raidenyn.github.io/driving-quiz/precache-manifest.67d70c021c06371d9e31cab8fee851f3.js"
 );
 
 self.addEventListener('message', (event) => {
