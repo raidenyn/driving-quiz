@@ -1,6 +1,6 @@
 import React, {useCallback} from "react"
 import {Answer} from "../../../../store/questions/state";
-import {AnswerButton, AnswerId, AnswerText} from "./styles";
+import {AnswerButton, AnswerId, AnswerPicture, AnswerText} from "./styles";
 
 export interface Props {
     answerId: string
@@ -40,6 +40,10 @@ export const AnswerPanel: React.FunctionComponent<Props> =
             <AnswerText>
                 {answer.text}
             </AnswerText>
+            {
+                answer.picture &&
+                <AnswerPicture src={`images/${answer.picture}`} />
+            }
         </AnswerButton>
     )
 }

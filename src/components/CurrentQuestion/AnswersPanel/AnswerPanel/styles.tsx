@@ -30,3 +30,6 @@ export const AnswerId = styled.span`
 export const AnswerText = styled.span`
   text-transform: none;
 `
+
+export const AnswerPicture = styled.img`
+`
