@@ -973,7 +973,7 @@ const questions: Question[] = [
                 "text": "Must be in the lane to drive straight."
             }
         },
-        "correctAnswerId": ""
+        "correctAnswerId": "A"
     },
     {
         "id": 52,
@@ -1149,7 +1149,7 @@ const questions: Question[] = [
             }
         },
         "picture": "60.png",
-        "correctAnswerId": ""
+        "correctAnswerId": "B"
     },
     {
         "id": 61,
@@ -1434,6 +1434,9 @@ const questions: Question[] = [
         "id": 75,
         "text": "When-the driver sees this sign, what should the driver do?",
         "answers": {
+            "A": {
+                "text": "Do not turn right or U-turn"
+            },
             "B": {
                 "text": "Do not turn left or U-turn"
             },
@@ -1445,7 +1448,7 @@ const questions: Question[] = [
             }
         },
         "picture": "75.png",
-        "correctAnswerId": ""
+        "correctAnswerId": "A"
     },
     {
         "id": 76,
@@ -1525,7 +1528,7 @@ const questions: Question[] = [
             }
         },
         "picture": "79.png",
-        "correctAnswerId": ""
+        "correctAnswerId": "C"
     },
     {
         "id": 80,
@@ -2404,7 +2407,7 @@ const questions: Question[] = [
             }
         },
         "picture": "123.png",
-        "correctAnswerId": ""
+        "correctAnswerId": "D"
     },
     {
         "id": 124,
@@ -3941,7 +3944,7 @@ const questions: Question[] = [
             }
         },
         "picture": "200.png",
-        "correctAnswerId": ""
+        "correctAnswerId": "A"
     },
     {
         "id": 201,
@@ -5458,7 +5461,7 @@ const questions: Question[] = [
                 "text": "Only the wheel only with low pressure tire."
             }
         },
-        "correctAnswerId": ""
+        "correctAnswerId": "A"
     },
     {
         "id": 280,
@@ -5702,7 +5705,7 @@ const questions: Question[] = [
                 "text": "Any gear"
             }
         },
-        "correctAnswerId": ""
+        "correctAnswerId": "A"
     },
     {
         "id": 293,
@@ -7660,6 +7663,9 @@ const questions: Question[] = [
         "id": 395,
         "text": "When driving long distances and you feel sleepy, what should you do?",
         "answers": {
+            "A": {
+                "text": "Take a rest, sleep or exercise at the rest areas"
+            },
             "B": {
                 "text": "Move and brake often to get rid sleepiness"
             },
@@ -7670,7 +7676,7 @@ const questions: Question[] = [
                 "text": "Speed up to reach the destination quickly."
             }
         },
-        "correctAnswerId": ""
+        "correctAnswerId": "A"
     },
     {
         "id": 396,
@@ -8395,6 +8401,9 @@ const questions: Question[] = [
         "id": 434,
         "text": "What is the meaning of 'blind spot'?",
         "answers": {
+            "A": {
+                "text": "Blind sport is the are that can be seen with th side mirrors"
+            },
             "B": {
                 "text": "Blind sport often occurs when changing lanes or make a reverse"
             },
@@ -8405,7 +8414,7 @@ const questions: Question[] = [
                 "text": "Blind spot when the sight is over looked"
             }
         },
-        "correctAnswerId": ""
+        "correctAnswerId": "A"
     },
     {
         "id": 435,
@@ -8449,6 +8458,9 @@ const questions: Question[] = [
         "id": 437,
         "text": "Which of the following actions should a driver NOT do when there are unexpected pedestrians on the road?",
         "answers": {
+            "A": {
+                "text": "Blow the horn to chase away the pedestrians"
+            },
             "B": {
                 "text": "Increase caution while driving"
             },
@@ -8459,7 +8471,7 @@ const questions: Question[] = [
                 "text": "Slow down"
             }
         },
-        "correctAnswerId": ""
+        "correctAnswerId": "A"
     },
     {
         "id": 438,
@@ -8801,6 +8813,9 @@ const questions: Question[] = [
         "id": 457,
         "text": "What should the drivers do when seeing a person with disabilities trying to cross the road?",
         "answers": {
+            "A": {
+                "text": "Stop and wait for the disabled person to cross first"
+            },
             "B": {
                 "text": "Slow down and flash the high beams to the disabled person"
             },
@@ -8811,7 +8826,7 @@ const questions: Question[] = [
                 "text": "Stop and keep signaling until the disabled person has crossed."
             }
         },
-        "correctAnswerId": ""
+        "correctAnswerId": "A"
     },
     {
         "id": 458,

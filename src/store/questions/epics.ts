@@ -18,6 +18,18 @@ const epics : { [name: string] : Epic<QuestionsActions, QuestionsActions, RootSt
             map((questions: Question[]) => {
                 // shuffle answers
                 for (const question of questions) {
+                    if (!question.correctAnswerId) {
+                        console.log(`Question ${question.id} doesn't contain correct answer.`)
+                    }
+                    if (!question.answers[question.correctAnswerId]) {
+                        console.log(`Question ${question.id} doesn't define correct answer ${question.correctAnswerId}.`)
+                    }
+                }
+                return questions
+            }),
+            map((questions: Question[]) => {
+                // shuffle answers
+                for (const question of questions) {
                     const versions = Object.keys(question.answers)
                     const newVersions = Object.keys(question.answers)
                     const newAnswers: typeof question.answers = { }
