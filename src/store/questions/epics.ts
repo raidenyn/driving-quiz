@@ -19,14 +19,15 @@ const epics : { [name: string] : Epic<QuestionsActions, QuestionsActions, RootSt
                 // shuffle answers
                 for (const question of questions) {
                     const versions = Object.keys(question.answers)
+                    const newVersions = Object.keys(question.answers)
                     const newAnswers: typeof question.answers = { }
                     let newCorrectAnswer = ""
-                    for (const [version, answer] of Object.entries(question.answers)) {
-                        const newVersion = versions.splice(Math.floor(Math.random() * versions.length), 1)[0]
-                        if (question.correctAnswerId === version) {
-                            newCorrectAnswer = newVersion
+                    for (const version of versions) {
+                        const newVersion = newVersions.splice(Math.floor(Math.random() * newVersions.length), 1)[0]
+                        if (question.correctAnswerId === newVersion) {
+                            newCorrectAnswer = version
                         }
-                        newAnswers[newVersion] = answer
+                        newAnswers[version] = question.answers[newVersion]
                     }
                     question.answers = newAnswers
                     question.correctAnswerId = newCorrectAnswer
