@@ -1,8 +1,8 @@
-import {combineReducers} from "redux";
+import {combineReducers} from 'redux'
 
 import { questionReducers } from './questions/reducers'
 import { sessionReducers } from './session/reducers'
-import {searchReducer} from "./search/reducers";
+import {searchReducer} from './search/reducers'
 
 export const rootReducer = combineReducers({
     questions: questionReducers,

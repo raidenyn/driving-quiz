@@ -1,7 +1,7 @@
-import React, {useCallback, useState} from "react";
-import {Drawer, IconButton} from "@material-ui/core";
-import {useStyles} from "./styles";
-import MenuIcon from '@material-ui/icons/Menu';
+import React, {useCallback, useState} from 'react'
+import {Drawer, IconButton} from '@material-ui/core'
+import {useStyles} from './styles'
+import MenuIcon from '@material-ui/icons/Menu'
 
 interface Props {
     menuList: React.ReactNode
@@ -14,7 +14,7 @@ export const MenuButton: React.FunctionComponent<Props> = ({ menuList }) => {
 
     const onToggle = useCallback(
         () => setOpen(!open),
-        [open, setOpen]
+        [open, setOpen],
     )
 
     const closeList = setOpen.bind(null, false)

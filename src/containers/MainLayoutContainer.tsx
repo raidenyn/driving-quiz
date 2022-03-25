@@ -1,10 +1,10 @@
 import React from 'react'
 import {connect, ConnectedProps} from 'react-redux'
-import {MainLayout} from "../components/MainLayout";
-import MainMenuContainer from "./MainMenu/MainMenuLayoutContainer";
-import {RootState} from "../store/state";
-import {currentSearchResultQuestions} from "../store/selectors/search-result";
-import SearchResultContainer from "./SearchResultContainer";
+import {MainLayout} from '../components/MainLayout'
+import MainMenuContainer from './MainMenu/MainMenuLayoutContainer'
+import {RootState} from '../store/state'
+import {currentSearchResultQuestions} from '../store/selectors/search-result'
+import SearchResultContainer from './SearchResultContainer'
 
 const connector = connect(
     (state: RootState)=> {
@@ -25,8 +25,8 @@ const MainLayoutContainer: React.FunctionComponent<Props> = ({ resultQuestions, 
         >
             {
                 resultQuestions
-                ? <SearchResultContainer />
-                : <>{children}</>
+                    ? <SearchResultContainer />
+                    : <>{children}</>
             }
         </MainLayout>
     )

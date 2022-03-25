@@ -1,9 +1,9 @@
-import {createEpicMiddleware} from "redux-observable";
-import {RootActions} from "./actions";
-import {RootState} from "./state";
-import {applyMiddleware, compose, createStore, Middleware} from "redux";
-import {rootReducer} from "./reducer";
-import {rootEpics} from "./epics";
+import {createEpicMiddleware} from 'redux-observable'
+import {RootActions} from './actions'
+import {RootState} from './state'
+import {applyMiddleware, compose, createStore, Middleware} from 'redux'
+import {rootReducer} from './reducer'
+import {rootEpics} from './epics'
 const epicMiddleware = createEpicMiddleware<RootActions, RootActions, RootState>()
 
 function configureStore(initialState?: RootState) {
@@ -12,7 +12,7 @@ function configureStore(initialState?: RootState) {
     ]
 
     const enhancer = compose(
-        applyMiddleware(...middlerware)
+        applyMiddleware(...middlerware),
     )
 
     return createStore(

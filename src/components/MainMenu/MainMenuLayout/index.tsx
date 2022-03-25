@@ -1,6 +1,6 @@
-import React from "react";
-import {AppBar, Toolbar, Typography} from "@material-ui/core";
-import {useStyles} from "./styles";
+import React from 'react'
+import {AppBar, Toolbar, Typography} from '@material-ui/core'
+import {useStyles} from './styles'
 
 interface Props {
     menu: React.ReactNode
@@ -23,5 +23,5 @@ export const MainMenuLayout: React.FunctionComponent<Props> = ({menu, search}) =
                 </Toolbar>
             </AppBar>
         </div>
-    );
+    )
 }

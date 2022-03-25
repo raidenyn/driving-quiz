@@ -1,8 +1,8 @@
-import React from "react";
-import { CardContent, Typography} from "@material-ui/core";
-import {Question} from "../../../store/questions/state";
-import {QuestionPicture} from "../../QuestionPicture";
-import {SearchResultItemCard} from "./styles";
+import React from 'react'
+import { CardContent, Typography} from '@material-ui/core'
+import {Question} from '../../../store/questions/state'
+import {QuestionPicture} from '../../QuestionPicture'
+import {SearchResultItemCard} from './styles'
 
 interface Props {
     question: Question

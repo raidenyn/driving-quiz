@@ -1,6 +1,6 @@
-import React, {useCallback} from "react"
-import {Answer} from "../../../../store/questions/state";
-import {AnswerButton, AnswerId, AnswerPicture, AnswerText} from "./styles";
+import React, {useCallback} from 'react'
+import {Answer} from '../../../../store/questions/state'
+import {AnswerButton, AnswerId, AnswerPicture, AnswerText} from './styles'
 
 export interface Props {
     answerId: string
@@ -18,32 +18,32 @@ export interface Props {
 
 export const AnswerPanel: React.FunctionComponent<Props> =
     (
-        { answerId, answer, isAvailable, isCorrect, isGotten, onAnswer }
+        { answerId, answer, isAvailable, isCorrect, isGotten, onAnswer },
     ) => {
-    const onGettingAnswer = useCallback(
-        () => {
-            if (isAvailable) {
-                onAnswer({ answerId })
-            }
-        },
-        [onAnswer, isAvailable, answerId]
-    )
+        const onGettingAnswer = useCallback(
+            () => {
+                if (isAvailable) {
+                    onAnswer({ answerId })
+                }
+            },
+            [onAnswer, isAvailable, answerId],
+        )
 
-    return (
-        <AnswerButton
-            isCorrect={isCorrect}
-            isGotten={isGotten}
-            onClick={onGettingAnswer}
-            disabled={!isAvailable}
-        >
-            <AnswerId>{answerId}.</AnswerId>
-            <AnswerText>
-                {answer.text}
-            </AnswerText>
-            {
-                answer.picture &&
+        return (
+            <AnswerButton
+                isCorrect={isCorrect}
+                isGotten={isGotten}
+                onClick={onGettingAnswer}
+                disabled={!isAvailable}
+            >
+                <AnswerId>{answerId}.</AnswerId>
+                <AnswerText>
+                    {answer.text}
+                </AnswerText>
+                {
+                    answer.picture &&
                 <AnswerPicture src={`images/${answer.picture}`} />
-            }
-        </AnswerButton>
-    )
-}
+                }
+            </AnswerButton>
+        )
+    }

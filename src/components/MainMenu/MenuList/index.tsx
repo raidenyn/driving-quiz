@@ -1,9 +1,9 @@
 
 
-import React from "react";
-import List from '@material-ui/core/List';
-import {Divider, ListItem, ListItemIcon, ListItemText} from "@material-ui/core";
-import OpenInNew from '@material-ui/icons/OpenInNew';
+import React from 'react'
+import List from '@material-ui/core/List'
+import {Divider, ListItem, ListItemIcon, ListItemText} from '@material-ui/core'
+import OpenInNew from '@material-ui/icons/OpenInNew'
 
 interface Props {
     onNewSession(): void

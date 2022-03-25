@@ -1,20 +1,20 @@
 import React from 'react'
 import {connect, ConnectedProps} from 'react-redux'
-import {RootState} from "../store/state";
-import {sessionActions} from "../store/session/actions";
+import {RootState} from '../store/state'
+import {sessionActions} from '../store/session/actions'
 import {
     currentQuestion, currentQuestionsCount,
     currentSessionQuestion,
     totalCorrectAnswers,
-    totalQuestionsCount
-} from "../store/selectors/correct-answer";
-import {CurrentQuestion} from "../components/CurrentQuestion";
-import {NewSessionButton} from "../components/NewSessionButton";
-import {NextQuestionButton} from "../components/NextQuestionButton";
-import {Container} from "@material-ui/core";
-import {SessionProgressBar} from "../components/SessionProgressBar";
-import {SessionResult} from "../components/SessionResult";
-import {LandingPage} from "../components/LandingPage";
+    totalQuestionsCount,
+} from '../store/selectors/correct-answer'
+import {CurrentQuestion} from '../components/CurrentQuestion'
+import {NewSessionButton} from '../components/NewSessionButton'
+import {NextQuestionButton} from '../components/NextQuestionButton'
+import {Container} from '@material-ui/core'
+import {SessionProgressBar} from '../components/SessionProgressBar'
+import {SessionResult} from '../components/SessionResult'
+import {LandingPage} from '../components/LandingPage'
 
 const connector = connect(
     (state: RootState)=> {
@@ -28,12 +28,12 @@ const connector = connect(
             correctAnswers: totalCorrectAnswers(state),
         }
     },
-    sessionActions
+    sessionActions,
 )
 
 type Props = ConnectedProps<typeof connector>
 
-const Question: React.FunctionComponent<Props> = (props) => {
+const Question: React.FunctionComponent<Props> = props => {
     if (!props.session) {
         return <LandingPage onCreateNewSession={props.createNew} />
     }
@@ -53,9 +53,9 @@ const Question: React.FunctionComponent<Props> = (props) => {
     return (
         <Container>
             <SessionProgressBar
-                total={props.totalQuestions!}
-                current={props.currentQuestion!}
-                correct={props.correctAnswers!}
+                total={props.totalQuestions ?? 0}
+                current={props.currentQuestion ?? 0}
+                correct={props.correctAnswers ?? 0}
             />
             <CurrentQuestion
                 key="question"

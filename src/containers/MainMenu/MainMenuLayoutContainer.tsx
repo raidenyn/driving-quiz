@@ -1,8 +1,8 @@
 import React from 'react'
 import {connect, ConnectedProps} from 'react-redux'
-import {MainMenuLayout} from "../../components/MainMenu/MainMenuLayout";
-import SearchInputContainer from "./SearchInputContainer";
-import MainMenuContainer from "./MainMenuContainer";
+import {MainMenuLayout} from '../../components/MainMenu/MainMenuLayout'
+import SearchInputContainer from './SearchInputContainer'
+import MainMenuContainer from './MainMenuContainer'
 
 const connector = connect()
 

@@ -1,7 +1,7 @@
-import {questionsActions} from "./questions/actions";
-import {ActionType} from "typesafe-actions";
-import {sessionActions} from "./session/actions";
-import {searchActions} from "./search/actions";
+import {questionsActions} from './questions/actions'
+import {ActionType} from 'typesafe-actions'
+import {sessionActions} from './session/actions'
+import {searchActions} from './search/actions'
 
 export const rootActions = {
     questions: questionsActions,

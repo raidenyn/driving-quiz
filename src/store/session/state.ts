@@ -3,7 +3,7 @@ export interface SessionState {
 }
 
 export interface Session {
-    questions: Array<SessionQuestion>
+    questions: SessionQuestion[]
 
     currentQuestionIndex: number
 }

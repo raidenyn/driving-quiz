@@ -1,8 +1,8 @@
-import React from "react"
-import {QuestionPanel} from "./QuestionPanel";
-import {Question} from "../../store/questions/state";
-import {QuestionLayout} from "./QuestionLayout";
-import {AnswersPanel} from "./AnswersPanel";
+import React from 'react'
+import {QuestionPanel} from './QuestionPanel'
+import {Question} from '../../store/questions/state'
+import {QuestionLayout} from './QuestionLayout'
+import {AnswersPanel} from './AnswersPanel'
 
 export interface Props {
     question: Question

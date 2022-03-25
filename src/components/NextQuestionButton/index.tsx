@@ -1,6 +1,6 @@
-import React from "react"
-import {Button} from "@material-ui/core";
-import {NextButton} from "./styles";
+import React from 'react'
+import {Button} from '@material-ui/core'
+import {NextButton} from './styles'
 
 
 export interface Props {
@@ -11,7 +11,7 @@ export const NextQuestionButton: React.FunctionComponent<Props> = ({ onNextQuest
     return (
         <NextButton>
             <Button onClick={onNextQuestion} variant="outlined">
-                Next question >>>
+                Next question &gt;&gt;&gt;
             </Button>
         </NextButton>
     )

@@ -1,8 +1,9 @@
-import {combineEpics, Epic} from "redux-observable";
-import {searchActions, SearchActions} from "./actions";
-import {isActionOf} from "typesafe-actions";
-import {filter, map, withLatestFrom} from "rxjs/operators";
-import {RootState} from "../state";
+import {combineEpics, Epic} from 'redux-observable'
+import {searchActions, SearchActions} from './actions'
+import {isActionOf} from 'typesafe-actions'
+import {filter, map, withLatestFrom} from 'rxjs/operators'
+import {RootState} from '../state'
+import { Question } from '../questions/state'
 
 const epics : { [name: string] : Epic<SearchActions, SearchActions, RootState> } = {
     searchQuestions: (action$, state$) =>
@@ -11,21 +12,21 @@ const epics : { [name: string] : Epic<SearchActions, SearchActions, RootState> }
             withLatestFrom(state$),
             map(([action, state]) => ({
                 searchPhrase: action.payload.searchPhrase,
-                questions: state.questions.all
+                questions: state.questions.all,
             })),
             map(({searchPhrase, questions}) => {
                 if (searchPhrase) {
                     return Object
                         .values(questions)
-                        .filter((question) => {
+                        .filter((question: Question) => {
                             return question.text.indexOf(searchPhrase) >= 0
                         })
-                        .map((question) => question.id)
+                        .map((question: Question) => question.id)
                 } else {
                     return null
                 }
             }),
-            map((questionIds) => searchActions.setSearchResult({ questionIds }))
+            map(questionIds => searchActions.setSearchResult({ questionIds })),
         ),
 }
 

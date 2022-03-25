@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import {Button, ButtonProps} from "@material-ui/core";
-import React from "react";
+import {Button, ButtonProps} from '@material-ui/core'
+import React from 'react'
 
 interface AnswerButtonProps extends ButtonProps {
     isCorrect: boolean | null
@@ -9,16 +9,16 @@ interface AnswerButtonProps extends ButtonProps {
 }
 
 export const AnswerButton = styled(
-    ({isCorrect, isGotten, ...props}: AnswerButtonProps) => <Button {...props} variant="contained"/>
+    ({isCorrect, isGotten, ...props}: AnswerButtonProps) => <Button {...props} variant="contained"/>,
 )<AnswerButtonProps>`
   &, &:hover, &.Mui-disabled {
-    background-color: ${({isCorrect, isGotten}) => isCorrect ? "LawnGreen" : (isGotten ? "yellow" : undefined)};
+    background-color: ${({isCorrect, isGotten}) => isCorrect ? 'LawnGreen' : (isGotten ? 'yellow' : undefined)};
     width: 100%;
     height: 100%;
   }
   
   &.Mui-disabled {
-    color: ${({isCorrect, isGotten}) => (isCorrect || isGotten) && "black" };
+    color: ${({isCorrect, isGotten}) => (isCorrect || isGotten) && 'black' };
   }
 `
 

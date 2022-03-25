@@ -1,5 +1,5 @@
-import React from "react"
-import {Box, Grid, Paper} from "@material-ui/core";
+import React from 'react'
+import {Box, Grid, Paper} from '@material-ui/core'
 
 export interface Props {
     question: React.ReactNode
@@ -7,7 +7,7 @@ export interface Props {
     answers: React.ReactNode
 }
 
-export const QuestionLayout: React.FunctionComponent<Props> = (props) => {
+export const QuestionLayout: React.FunctionComponent<Props> = props => {
     return (
         <Paper elevation={3}>
             <Box m={3}>

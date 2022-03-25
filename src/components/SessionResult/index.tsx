@@ -1,5 +1,5 @@
-import React from "react"
-import {Correct, Result} from "./styles";
+import React from 'react'
+import {Correct, Result} from './styles'
 
 export interface Props {
     total: number | null
@@ -9,12 +9,12 @@ export interface Props {
 
 export const SessionResult: React.FunctionComponent<Props> =
     ({ total, correct}) => {
-    return (
-        <Result>
-            <p>
+        return (
+            <Result>
+                <p>
                 You have answered on { total } and
                 gotten <Correct>{ correct }</Correct> correct answers
-            </p>
-        </Result>
-    )
-}
+                </p>
+            </Result>
+        )
+    }

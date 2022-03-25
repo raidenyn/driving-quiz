@@ -1,15 +1,15 @@
-import {QuestionsState} from "./state";
-import {questionsActions, QuestionsActions} from "./actions";
-import {createReducer} from "typesafe-actions";
-import produce from "immer";
+import {QuestionsState} from './state'
+import {questionsActions, QuestionsActions} from './actions'
+import {createReducer} from 'typesafe-actions'
+import produce from 'immer'
 
 const defaultState: QuestionsState = {
-    all: { }
+    all: { },
 }
 
 declare module 'typesafe-actions' {
     interface Types {
-        RootAction: QuestionsActions;
+        RootAction: QuestionsActions
     }
 }
 

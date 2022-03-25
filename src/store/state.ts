@@ -1,9 +1,9 @@
-import {QuestionsState} from "./questions/state";
-import {SessionState} from "./session/state";
-import {SearchState} from "./search/state";
+import {QuestionsState} from './questions/state'
+import {SessionState} from './session/state'
+import {SearchState} from './search/state'
 
 export interface RootState {
-    questions: QuestionsState,
-    session: SessionState,
-    search: SearchState,
+    questions: QuestionsState
+    session: SessionState
+    search: SearchState
 }

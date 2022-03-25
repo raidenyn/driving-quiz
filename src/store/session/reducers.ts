@@ -1,7 +1,7 @@
-import {SessionState} from "./state";
-import {createReducer} from "typesafe-actions";
-import produce from "immer";
-import {SessionActions, sessionActions} from "./actions";
+import {SessionState} from './state'
+import {createReducer} from 'typesafe-actions'
+import produce from 'immer'
+import {SessionActions, sessionActions} from './actions'
 
 const defaultState: SessionState = {
     current: null,
@@ -19,7 +19,7 @@ export const sessionReducers = createReducer<SessionState, SessionActions>(defau
                 qestion.gottenAnswerId = action.payload.answerId
             }
         }))
-    .handleAction(sessionActions.nextQuestion, (state) =>
+    .handleAction(sessionActions.nextQuestion, state =>
         produce(state, draft => {
             if (draft.current) {
                 draft.current.currentQuestionIndex++

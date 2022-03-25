@@ -1,7 +1,7 @@
-import React, {useCallback} from "react";
-import {InputBase} from "@material-ui/core";
-import {useStyles} from "./styles";
-import SearchIcon from '@material-ui/icons/Search';
+import React, {useCallback} from 'react'
+import {InputBase} from '@material-ui/core'
+import {useStyles} from './styles'
+import SearchIcon from '@material-ui/icons/Search'
 
 interface Props {
     searchPhrase: string

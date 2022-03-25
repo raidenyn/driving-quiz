@@ -1,9 +1,9 @@
 import React from 'react'
 import {connect, ConnectedProps} from 'react-redux'
-import {MenuButton} from "../../components/MainMenu/MenuButton";
-import {sessionActions} from "../../store/session/actions";
-import {RootState} from "../../store/state";
-import {MenuList} from "../../components/MainMenu/MenuList";
+import {MenuButton} from '../../components/MainMenu/MenuButton'
+import {sessionActions} from '../../store/session/actions'
+import {RootState} from '../../store/state'
+import {MenuList} from '../../components/MainMenu/MenuList'
 
 const connector = connect(
     (_: RootState) => ({ }),
@@ -15,7 +15,7 @@ const connector = connect(
 type Props = ConnectedProps<typeof connector>
 
 const MainMenuContainer: React.FunctionComponent<Props> = (
-    { createNewSession }
+    { createNewSession },
 ) => {
     return (
         <MenuButton

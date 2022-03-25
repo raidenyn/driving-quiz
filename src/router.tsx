@@ -1,32 +1,34 @@
-import React, {useCallback} from "react";
-import {BrowserRouter, Route} from 'react-router-dom'
-import SessionQuestionContainer from "./containers/SessionQuestionContainer";
-import SearchQuestionContainer from "./containers/SearchResultContainer";
-import MainLayoutContainer from "./containers/MainLayoutContainer";
+import React, {useCallback} from 'react'
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import SessionQuestionContainer from './containers/SessionQuestionContainer'
+import SearchQuestionContainer from './containers/SearchResultContainer'
+import MainLayoutContainer from './containers/MainLayoutContainer'
 
 export const Router: React.FunctionComponent = () => (
-    <BrowserRouter basename="/license-test" >
-        <LayoutRouter path="/search" component={SearchQuestionContainer} layout={MainLayoutContainer} exact />
-        <LayoutRouter path="/" component={SessionQuestionContainer} layout={MainLayoutContainer}  exact />
+    <BrowserRouter>
+        <Routes>
+            <Route path="/search" element={<Page component={SearchQuestionContainer} />} />
+            <Route path="/" element={<Page component={SessionQuestionContainer} />} />
+        </Routes>
     </BrowserRouter>
 )
 
-const LayoutRouter: React.FunctionComponent<typeof Route.prototype.props & { layout: React.FunctionComponent }> =
+const Page: React.FunctionComponent<{ component: React.FunctionComponent, layout?: React.FunctionComponent }> =
     ({
-         component, layout, ...props
+        component, layout,
     }) => {
-    const LayoutComponent = useCallback(
-        (() => {
-            const Layout = layout
-            const Component = component
-            return (
-                <Layout>
-                    <Component />
-                </Layout>
-            )
-        }) as React.FunctionComponent,
-        [layout, component]
-    )
+        const LayoutComponent = useCallback(
+            () => {
+                const Layout = layout ?? MainLayoutContainer
+                const Component = component
+                return (
+                    <Layout>
+                        <Component />
+                    </Layout>
+                )
+            },
+            [layout, component],
+        )
 
-    return <Route component={LayoutComponent} {...props} />
-}
+        return LayoutComponent()
+    }

@@ -1,7 +1,7 @@
-import React from "react"
-import {Grid} from "@material-ui/core";
-import {Answers} from "../../../store/questions/state";
-import {AnswerPanel} from "./AnswerPanel";
+import React from 'react'
+import {Grid} from '@material-ui/core'
+import {Answers} from '../../../store/questions/state'
+import {AnswerPanel} from './AnswerPanel'
 
 export interface Props {
     answers: Answers
@@ -13,7 +13,7 @@ export interface Props {
     onAnswer(params: { answerId: string }): void
 }
 
-export const AnswersPanel: React.FunctionComponent<Props> = (props) => {
+export const AnswersPanel: React.FunctionComponent<Props> = props => {
     return (
         <Grid container spacing={2}>
             {

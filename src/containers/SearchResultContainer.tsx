@@ -1,8 +1,8 @@
 import React from 'react'
 import {connect, ConnectedProps} from 'react-redux'
-import {RootState} from "../store/state";
-import {SearchQuestionResult} from "../components/SearchQuestionsResult";
-import {currentSearchResultQuestions} from "../store/selectors/search-result";
+import {RootState} from '../store/state'
+import {SearchQuestionResult} from '../components/SearchQuestionsResult'
+import {currentSearchResultQuestions} from '../store/selectors/search-result'
 
 const connector = connect(
     (state: RootState)=> {

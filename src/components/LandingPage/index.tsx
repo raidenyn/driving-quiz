@@ -1,6 +1,6 @@
-import React from "react"
-import {Box, Typography} from "@material-ui/core";
-import {NewSessionButton} from "../NewSessionButton";
+import React from 'react'
+import {Box, Typography} from '@material-ui/core'
+import {NewSessionButton} from '../NewSessionButton'
 
 export interface Props {
     onCreateNewSession(): void

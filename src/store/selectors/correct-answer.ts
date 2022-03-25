@@ -1,32 +1,32 @@
 import { createSelector } from 'reselect'
-import {RootState} from "../state";
-import {Question} from "../questions/state";
-import {SessionQuestion} from "../session/state";
+import {RootState} from '../state'
+import {Question} from '../questions/state'
+import {SessionQuestion} from '../session/state'
 
 const currentSession = (state: RootState) => state.session.current
 
-const questions = (state: RootState) => state.questions.all
+const allQuestions = (state: RootState) => state.questions.all
 
 export const currentSessionQuestion = createSelector(
     currentSession,
-    (session) => {
+    session => {
         if (!session) {
             return null
         }
         const index = session.currentQuestionIndex
         return index == null ? null : session.questions[index]
-    }
+    },
 )
 
 export const currentQuestion = createSelector(
     currentSessionQuestion,
-    questions,
+    allQuestions,
     (question, questions) => {
         if (!question) {
             return null
         }
         return questions[question.questionId]
-    }
+    },
 )
 
 const isCorrectAnswer = (question: Question, sessionQuestion: SessionQuestion) => {
@@ -41,22 +41,22 @@ export const currentAnswerIsCorrect = createSelector(
             return null
         }
         return isCorrectAnswer(question, sessionQuestion)
-    }
+    },
 )
 
 export const totalQuestionsCount = createSelector(
     currentSession,
-    (session) => session ? Object.keys(session.questions).length : null,
+    session => session ? Object.keys(session.questions).length : null,
 )
 
 export const currentQuestionsCount = createSelector(
     currentSession,
-    (session) => session ? session.currentQuestionIndex + 1 : null,
+    session => session ? session.currentQuestionIndex + 1 : null,
 )
 
 export const totalCorrectAnswers = createSelector(
     currentSession,
-    questions,
+    allQuestions,
     (session, questions) => {
         if (!session || !questions) {
             return null
@@ -67,5 +67,5 @@ export const totalCorrectAnswers = createSelector(
             }
             return total
         }, 0)
-    }
+    },
 )

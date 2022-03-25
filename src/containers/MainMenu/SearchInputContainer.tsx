@@ -1,8 +1,8 @@
 import React from 'react'
 import {connect, ConnectedProps} from 'react-redux'
-import {SearchInput} from "../../components/MainMenu/SearchInput";
-import {RootState} from "../../store/state";
-import {searchActions} from "../../store/search/actions";
+import {SearchInput} from '../../components/MainMenu/SearchInput'
+import {RootState} from '../../store/state'
+import {searchActions} from '../../store/search/actions'
 
 const connector = connect(
     (state: RootState)=> {
@@ -12,7 +12,7 @@ const connector = connect(
     },
     {
         setSearchPhrase: searchActions.setSearchPhrase,
-    }
+    },
 )
 
 type Props = ConnectedProps<typeof connector>

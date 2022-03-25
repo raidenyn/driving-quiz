@@ -1,7 +1,7 @@
-import {SearchState} from "./state";
-import {createReducer} from "typesafe-actions";
-import produce from "immer";
-import {SearchActions, searchActions} from "./actions";
+import {SearchState} from './state'
+import {createReducer} from 'typesafe-actions'
+import produce from 'immer'
+import {SearchActions, searchActions} from './actions'
 
 const defaultState: SearchState = {
     searchPhrase: '',

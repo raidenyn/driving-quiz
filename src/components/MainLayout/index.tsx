@@ -1,8 +1,8 @@
-import React from "react";
-import {Box, Container} from "@material-ui/core";
+import React from 'react'
+import {Box, Container} from '@material-ui/core'
 
 interface Props {
-    mainMenu: React.ReactNode,
+    mainMenu: React.ReactNode
 }
 
 export const MainLayout: React.FunctionComponent<Props> = ({ mainMenu, children }) => {
@@ -13,5 +13,5 @@ export const MainLayout: React.FunctionComponent<Props> = ({ mainMenu, children 
                 {children}
             </Box>
         </Container>
-    );
+    )
 }
