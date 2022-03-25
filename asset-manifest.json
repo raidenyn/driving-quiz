@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "https://driving-quiz.krungthepmahana.com/static/css/main.e6c13ad2.css",
+    "main.js": "https://driving-quiz.krungthepmahana.com/static/js/main.b5b29e2f.js",
+    "static/js/150.7343ad06.chunk.js": "https://driving-quiz.krungthepmahana.com/static/js/150.7343ad06.chunk.js",
+    "static/js/377.f483cece.chunk.js": "https://driving-quiz.krungthepmahana.com/static/js/377.f483cece.chunk.js",
+    "service-worker.js": "https://driving-quiz.krungthepmahana.com/service-worker.js",
+    "index.html": "https://driving-quiz.krungthepmahana.com/index.html",
+    "main.e6c13ad2.css.map": "https://driving-quiz.krungthepmahana.com/static/css/main.e6c13ad2.css.map",
+    "main.b5b29e2f.js.map": "https://driving-quiz.krungthepmahana.com/static/js/main.b5b29e2f.js.map",
+    "150.7343ad06.chunk.js.map": "https://driving-quiz.krungthepmahana.com/static/js/150.7343ad06.chunk.js.map",
+    "377.f483cece.chunk.js.map": "https://driving-quiz.krungthepmahana.com/static/js/377.f483cece.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.b5b29e2f.js"
+  ]
+}
