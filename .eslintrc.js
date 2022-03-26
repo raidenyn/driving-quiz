@@ -140,6 +140,7 @@ module.exports = {
             "undefined"
         ],
         "id-match": "error",
+        "import/first": "off",
         "jsdoc/check-alignment": "error",
         "jsdoc/check-indentation": "error",
         "jsdoc/newline-after-description": "error",
