@@ -114,7 +114,7 @@ const questions: Question[] = [
                 'text': 'A fine not exceeding 2,000 baht.',
             },
             'B': {
-                'text': 'A fine not exceeding 2,000 baht.',
+                'text': 'A fine exceeding 2,000 baht.',
             },
             'C': {
                 'text': 'Imprisonment up to 3 months',
@@ -1890,7 +1890,7 @@ const questions: Question[] = [
             },
         },
         'picture': '97.png',
-        'correctAnswerId': 'A',
+        'correctAnswerId': 'B',
     },
     {
         'id': 98,
@@ -3086,7 +3086,7 @@ const questions: Question[] = [
             },
         },
         'picture': '157.png',
-        'correctAnswerId': 'A',
+        'correctAnswerId': 'B',
     },
     {
         'id': 158,
@@ -8416,7 +8416,7 @@ const questions: Question[] = [
                 'text': 'Blind spot when the sight is over looked',
             },
         },
-        'correctAnswerId': 'A',
+        'correctAnswerId': 'C',
     },
     {
         'id': 435,
